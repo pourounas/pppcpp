@@ -40,6 +40,10 @@ Generated\ Files/
 *.VisualState.xml
 TestResult.xml
 
+# Apple Build Results
+*.plist
+*.dSYM
+
 # Build Results of an ATL Project
 [Dd]ebugPS/
 [Rr]eleasePS/
