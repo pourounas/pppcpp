@@ -33,10 +33,16 @@ int main(){
 
     // find shortest and longest distances
     // Not using a min/max from standard library on purpose
+    // we are interested in neighbouring cities so we can't sort
     double min, max = 0;
-    std::sort(distances.begin(), distances.end());
-    min = distances[0];
-    // iterables index starts at 0
-    max = distances[count-1];
+    for (double distance : distances){
+        if (min == 0 || min > distance){
+            min = distance;
+        }
+        else if (max == 0 || max < distance){
+            max = distance;
+        }
+        else{}
+    }
     std::cout << "Shortest distance: " << min << '\t' << "Longest distance: " << max << std::endl;
 }
