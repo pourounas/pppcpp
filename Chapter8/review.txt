@@ -1,0 +1,27 @@
+1. What is the difference between declaration and a definition?
+A. int foo is declaration and int foo = 8 is definition.
+
+2. How do you syntactically distinguish between a function declaration and a function definition?
+A. Function definition will have a body/scope {} where code is defined.
+
+5. Is int a; a definition or just a declaration?
+A. declaration
+
+9. What are header files used for?
+A. 
+
+19. What do x&&y and x||y, respectively mean?
+A. && is logical AND while & is bitwise AND. One difference between x&&y vs x&y is that if 
+x evaluates to false then y is not evaluated (lazy evaluation).
+
+23. What is the purpose of a namespace?
+Classes and structs define types. You can create an object of a type. 
+Namespaces simply declare a scope inside which other types, functions, objects, or namespaces can exist. 
+You can't create an object of typestd (unless of course you created a type called std, 
+which would hide the std namespace).
+
+24. How does a namespace differ from a class?
+
+25. What is a using declaration?
+
+27. What is a namespace std?
